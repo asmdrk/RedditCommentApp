@@ -1,13 +1,13 @@
 from joblib import load
 import pandas as pd
 import praw
-
+import env
 # load the saved pipleine model
 # TODO: look into hosting stuff
 pipeline = load("text_classification.joblib")
 
 cid = "fzvmD-u5jrC3Vh0jee27ig"
-secret = "SA5UG3hFfeJ48LYIiW41-B450iJGgw"
+secret = env.REDDIT_SECRET
 
 reddit = praw.Reddit(
     client_id=cid,
