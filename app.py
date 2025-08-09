@@ -22,7 +22,7 @@ def get_data():
         return redirect(url_for('success', name=user))
 
 
-@app.route('/success/<name>')
+@app.route('/success/<subreddit>')
 def success(name):
     return "<xmp>" + str(requestResults(name)) + " </xmp> "
 
