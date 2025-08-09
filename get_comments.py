@@ -24,7 +24,7 @@ def get_subreddit_comments(text_query):
         comments.append(comment.body)
         count += 1
         # If you've processed 20 comments, break out of the loop
-        if count >= 20:
+        if count >= 100:
             break
     return comments
 
