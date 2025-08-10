@@ -17,6 +17,8 @@ reddit = praw.Reddit(
 
 
 def get_subreddit_comments(text_query):
+    print("getting comments")
+    print(f"{secret} {cid}")
     subreddit = reddit.subreddit(text_query)
     comments = []
     count = 0
